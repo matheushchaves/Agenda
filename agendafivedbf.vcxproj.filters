@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Arquivos de Origem">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Arquivos de Recurso">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Bibliotecas">
+      <UniqueIdentifier>{da8952f8-505e-4a7f-8bff-7348eb6eeca6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="agenda.prg">
+      <Filter>Arquivos de Origem</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="agenda.c">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\Fwh1312\lib\FiveH32.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Fwh1312\lib\FiveHC32.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\bz2.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\expat.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\gtcgi.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\gtgui.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\gtpca.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\gtstd.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\gtwin.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\gtwvg.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\gtwvt.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbamf.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbblat.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbblink.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbbz2.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbcomio.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbcomm.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbcommon.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbcpage.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbcplr.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbct.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbdebug.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbexpat.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbextern.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbformat.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbfoxpro.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbfship.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbgt.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbhpdf.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbhsx.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbhttpd.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hblang.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hblzf.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbmacro.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbmainstd.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbmainwin.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbmemio.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbmisc.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbmlzo.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbmxml.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbmzip.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbnetio.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbnf.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbodbc.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hboslib.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbpcre.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbpp.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbrdd.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbrtl.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbsix.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbsms.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbsqlit3.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbtcpio.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbtest.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbtinymt.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbtip.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbtpathy.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbuddall.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbusrrdd.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbvm.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbvmmt.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbwin.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbxdiff.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbxpp.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbzebra.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbziparc.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\hbzlib.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\jpeg.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\libhpdf.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\lzf.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\minilzo.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\minizip.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\mxml.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\png.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\rddbm.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\rddcdx.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\rddfpt.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\rddnsx.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\rddntx.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\rddsql.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\sddodbc.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\sddsqlt3.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\sqlite3.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\tiff.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\tinymt.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\xdiff.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Hbmsvc\lib\xhb.lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Lib\OleDlg.Lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Lib\MSImg32.Lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Lib\Version.Lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+    <Library Include="..\..\..\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Lib\ComCtl32.Lib">
+      <Filter>Bibliotecas</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="agend1.res">
+      <Filter>Arquivos de Recurso</Filter>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+</Project>

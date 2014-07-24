@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D7B391C8-5705-4737-A65C-A60A7DD7B5C3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>agendafivedbf</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>c:\hbmsvc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <CustomBuild>
+      <Command>c:\hbmsvc\bin\harbour %(FullPath) /n /ic:\hbmsvc\include /ic:\fwh1312\include</Command>
+    </CustomBuild>
+    <CustomBuild>
+      <Outputs>.\%(Filename).c</Outputs>
+    </CustomBuild>
+    <CustomBuild>
+      <TreatOutputAsContent>true</TreatOutputAsContent>
+    </CustomBuild>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="agenda.prg">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="agenda.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\Fwh1312\lib\FiveH32.lib" />
+    <Library Include="..\..\..\Fwh1312\lib\FiveHC32.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\bz2.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\expat.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\gtcgi.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\gtgui.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\gtpca.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\gtstd.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\gtwin.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\gtwvg.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\gtwvt.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbamf.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbblat.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbblink.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbbz2.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbcomio.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbcomm.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbcommon.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbcpage.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbcplr.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbct.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbdebug.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbexpat.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbextern.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbformat.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbfoxpro.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbfship.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbgt.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbhpdf.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbhsx.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbhttpd.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hblang.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hblzf.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbmacro.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbmainstd.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbmainwin.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbmemio.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbmisc.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbmlzo.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbmxml.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbmzip.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbnetio.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbnf.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbodbc.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hboslib.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbpcre.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbpp.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbrdd.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbrtl.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbsix.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbsms.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbsqlit3.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbtcpio.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbtest.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbtinymt.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbtip.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbtpathy.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbuddall.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbusrrdd.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbvm.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbvmmt.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbwin.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbxdiff.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbxpp.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbzebra.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbziparc.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\hbzlib.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\jpeg.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\libhpdf.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\lzf.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\minilzo.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\minizip.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\mxml.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\png.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\rddbm.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\rddcdx.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\rddfpt.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\rddnsx.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\rddntx.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\rddsql.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\sddodbc.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\sddsqlt3.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\sqlite3.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\tiff.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\tinymt.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\xdiff.lib" />
+    <Library Include="..\..\..\Hbmsvc\lib\xhb.lib" />
+    <Library Include="..\..\..\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Lib\ComCtl32.Lib" />
+    <Library Include="..\..\..\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Lib\MSImg32.Lib" />
+    <Library Include="..\..\..\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Lib\OleDlg.Lib" />
+    <Library Include="..\..\..\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Lib\Version.Lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="agend1.res" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
